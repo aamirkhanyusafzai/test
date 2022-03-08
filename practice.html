@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Id</th>
+            <th>Skill</th>
+        </thead>
+
+        <tbody class="tbody"></tbody>
+    </table>
+
+    <script>
+
+        var student = [
+            {
+                name: "Aamir",
+                id: 205,
+                skill: "Math"
+            },
+            {
+                name: "afaq",
+                id: 205,
+                skill: "urdu"
+            },
+            {
+                name: "Shehzad",
+                id: 205,
+                skill: "English"
+            }
+        ];
+
+        var tbody = document.getElementById("tbody");
+
+        student.forEach ((item) => {
+            tbody.innerHTML += "<tr><td>" + item.name + "</td><td>" + item.id + "</td><td>" + item.skill + "</td><tr>";
+        })
+    </script>
+
+</body>
+
+</html>
